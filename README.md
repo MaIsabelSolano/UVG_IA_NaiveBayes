@@ -4,7 +4,7 @@ Departamento de Ciencias de la Computación <br>
 CC3085 Inteligencia Artificial <br>
 # UVG_IA_NaiveBayes
 Naive Bayes implementation to classify HAM and SPAM
-Comparison between implementation with Laplace Smothinh and skLearn
+Comparison between implementation with Laplace Smothing and skLearn
 
 ### Pre-requisitos 📋
 
