@@ -200,7 +200,7 @@ print('Precision: ', model.score(X_test, y_test))
 print()
 # Clasificacion desde consola
 while True:
-    texto = input("Ingresa un mensaje para clasificar (o presiona Enter para salir): ")
+    texto = input("A continuación ingrese el SMS a evaluar (preferiblemente en inglés) (ENTER para terminar):")
     if texto == "":
         break
     prediction = model.predict([preprocess(texto)])
@@ -209,13 +209,13 @@ while True:
 """
 
 *   ¿Cuál implementación lo hizo mejor? ¿Su implementación o la de la librería?
-    * La de la librería
+    * La de la librería sklearn.
     
 *   ¿Por qué cree que se debe esta diferencia?
     * Primero que nada podemos decir que la librería cuenta con una precisión mucho mayor
-      al momento de realizar cálculos por lo que se esperaba que la librería tuviera mejor
-      rendimiento. Otro punto que consideramos importante mencionar es que la limpieza de datos
-      para la parte 1.4 se realizó con una librería dedicada a esto por lo que se pudieron 
+      al momento de realizar cálculos por lo que se esperaba que la librería tuviera mejor rendimiento. 
+      Otro punto que consideramos importante mencionar es que la limpieza de dato para 
+      la parte 1.4 se realizó con una librería dedicada a esto por lo que se pudieron 
       eliminar palabras/números/carácteres que no habíamos considerado como importantes 
       para poder eliminarlos y finalmente consideramos que la división de datos para entreno, prueba
       y validación pudieron variar haciendo que nuestro modelo no fuera el más exacto.
